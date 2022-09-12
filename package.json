@@ -1,0 +1,26 @@
+{
+  "name": "web-dev-portfolio",
+  "version": "1.0.0",
+  "description": "Bobby Woody Web Developer Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build ",
+    "serve": "vite preview"
+  },
+  "keywords": [
+    "Web Developer",
+    "junior web Developer",
+    "Bobby Woody",
+    "Bobby Web Developer",
+    "Bobby woody Software Developer",
+    "Software Developer"
+  ],
+  "author": "Bobby Woody",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "normalize.css": "^8.0.1",
+    "vite": "^3.1.0"
+  }
+}
