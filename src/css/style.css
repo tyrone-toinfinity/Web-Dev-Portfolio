@@ -1,5 +1,108 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: antiquewhite;
+  font-family: "Cutive Mono", monospace;
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.email {
+  /* background-color: blanchedalmond; */
+  writing-mode: vertical-rl;
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+
+  font-size: 1rem;
+  display: flex;
+}
+.email > a {
+  color: #393e59;
+}
+
+header {
+  display: flex;
+  /* background-color: #447878; */
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  background-color: #f0f2f2;
+  /* padding-right: 3rem; */
+}
+nav > ul {
+  display: flex;
+}
+nav > * {
+  align-self: center;
+}
+nav > ul > li > a {
+  color: #393e59;
+  font-size: 1.2rem;
+  padding: 1rem;
+
+  /* transition */
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+nav > ul > li > a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  background: #82d9d9;
+  height: 4px;
+  -webkit-transition-property: left;
+  transition-property: left;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+nav > ul > li > a:hover::before,
+nav > ul > li > a:focus:before,
+nav > ul > li > a:active:before {
+  left: 0;
+}
+
+nav > div > a {
+  color: #393e59;
+  font-size: 1.2rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-right: 1rem;
+
+  /* transition */
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+
+nav > div > a:hover {
+  background-color: #393e59;
+  color: white;
 }
