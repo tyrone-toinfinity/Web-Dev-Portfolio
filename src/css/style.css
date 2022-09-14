@@ -2,6 +2,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Cutive Mono", monospace;
+
+  --primary: #393e59;
+  --bglight: #f0f2f2;
+  --bgdark: #010326;
+  --accentcolor: #82d9d9;
+  --accentcolor2: #6fbfbf;
+  --accentcolor3: #b024b1;
+  --accentcolor4: #6a73a6;
+  --accentcolor5: #273273;
 }
 ul {
   text-decoration: none;
@@ -11,31 +20,49 @@ ul {
 a {
   text-decoration: none;
   list-style: none;
+  position: relative;
+}
+a > sup {
+  color: var(--accentcolor3);
+  position: absolute;
+  top: 4px;
+  right: 16px;
 }
 
 .email {
-  /* background-color: blanchedalmond; */
   writing-mode: vertical-rl;
   position: fixed;
   bottom: 3rem;
   right: 2rem;
-
   font-size: 1rem;
   display: flex;
 }
+.social {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 20px;
+  position: fixed;
+  top: 7rem;
+  left: 2.4rem;
+  font-size: 1.6rem;
+}
+.social > a {
+  color: var(--primary);
+  margin: 1rem 0.5rem;
+}
+
 .email > a {
-  color: #393e59;
+  color: var(--primary);
 }
 
 header {
   display: flex;
-  /* background-color: #447878; */
   justify-content: space-between;
+  margin-bottom: 12rem;
 }
 nav {
   display: flex;
-  background-color: #f0f2f2;
-  /* padding-right: 3rem; */
+  background-color: var(--bglight);
 }
 nav > ul {
   display: flex;
@@ -43,12 +70,11 @@ nav > ul {
 nav > * {
   align-self: center;
 }
+/* transition  nav bar */
 nav > ul > li > a {
-  color: #393e59;
+  color: var(--primary);
   font-size: 1.2rem;
   padding: 1rem;
-
-  /* transition */
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -65,8 +91,8 @@ nav > ul > li > a:before {
   left: 100%;
   right: 0;
   bottom: 0;
-  background: #82d9d9;
-  height: 4px;
+  background: var(--accentcolor);
+  height: 1px;
   -webkit-transition-property: left;
   transition-property: left;
   -webkit-transition-duration: 0.3s;
@@ -82,14 +108,13 @@ nav > ul > li > a:active:before {
 }
 
 nav > div > a {
-  color: #393e59;
+  color: var(--primary);
   font-size: 1.2rem;
   border: 1px solid white;
   border-radius: 5px;
   padding: 1rem;
-  margin-right: 1rem;
+  margin: 0 1.5rem;
 
-  /* transition */
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -103,6 +128,126 @@ nav > div > a {
 }
 
 nav > div > a:hover {
-  background-color: #393e59;
+  background-color: var(--primary);
   color: white;
+}
+
+/* social transitions */
+
+.email > a {
+  animation-name: fadein;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+}
+.email > a:hover {
+  color: var(--accentcolor3);
+}
+
+.social > a {
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.social > a:hover {
+  transform: translateY(-10px);
+  transition-duration: 0.5s;
+  color: var(--accentcolor);
+}
+@keyframes fadein {
+  0% {
+    transform: translateY(-2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* logo */
+.logo {
+  background-color: white;
+  display: inline-block;
+}
+.logo img:hover {
+  opacity: 0.8;
+}
+section {
+  margin: 0 6.5rem;
+}
+
+section > h3 {
+  font-variant: small-caps;
+}
+
+/* Intro */
+.intro > h4 {
+  color: var(--accentcolor3);
+  font-size: 1.25rem;
+  animation-name: intro;
+  animation-duration: 1.8s;
+  animation-timing-function: ease-in;
+  margin-bottom: 0;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.intro > h1 {
+  font-size: 4rem;
+  color: var(--accentcolor5);
+  margin-top: 0.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0em;
+}
+.intro > h3 {
+  font-size: 2.4rem;
+  margin-top: 0.2rem;
+  font-variant: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0em;
+  color: var(--accentcolor4);
+}
+.intro > p {
+  font-size: 1.2rem;
+  width: 550px;
+  color: var(--accentcolor4);
+}
+h2 > sup {
+  color: var(--accentcolor3);
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+}
+
+section > h2 {
+  color: var(--primary);
+  font-size: 2rem;
+}
+
+/* about */
+
+.about > div > ul {
+  display: grid;
+  width: 32rem;
+  height: 10rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  /* list-style: circle; */
+}
+.about > div > ul > li::before {
+  color: var(--accentcolor3);
+  margin-left: -1em;
+  margin-right: 5px;
+  content: "•";
+  font-size: .9rem;
 }
