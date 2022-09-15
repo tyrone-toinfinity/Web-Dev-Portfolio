@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: "Cutive Mono", monospace;
 
+  
   --primary: #393e59;
   --bglight: #f0f2f2;
   --bgdark: #010326;
@@ -11,6 +12,11 @@ body {
   --accentcolor3: #b024b1;
   --accentcolor4: #6a73a6;
   --accentcolor5: #273273;
+}
+
+main {
+  margin: auto;
+  max-width: 1400px;
 }
 ul {
   text-decoration: none;
@@ -114,7 +120,7 @@ nav > div > a {
   border-radius: 5px;
   padding: 1rem;
   margin: 0 1.5rem;
-
+  padding-right: 2rem;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -133,7 +139,6 @@ nav > div > a:hover {
 }
 
 /* social transitions */
-
 .email > a {
   animation-name: fadein;
   animation-duration: 1.5s;
@@ -180,24 +185,64 @@ section {
 section > h3 {
   font-variant: small-caps;
 }
-
-/* Intro */
-.intro > h4 {
-  color: var(--accentcolor3);
-  font-size: 1.25rem;
-  animation-name: intro;
-  animation-duration: 1.8s;
+.logo {
+  animation: fadelogo 1s;
   animation-timing-function: ease-in;
-  margin-bottom: 0;
 }
 
-@keyframes intro {
+@keyframes fadelogo {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
+}
+ul > li:nth-child(1) {
+  animation: navlist 1s ease-in 0.1s backwards;
+}
+ul > li:nth-child(2) {
+  animation: navlist 1s ease-in 0.2s backwards;
+}
+ul > li:nth-child(3) {
+  animation: navlist 1s ease-in 0.4s backwards;
+}
+nav > div {
+  animation: navlist 1s ease-in 0.5s backwards;
+}
+
+@keyframes navlist {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* nav animation */
+
+/* Intro */
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+    transform: translateY(0.8rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro > h4 {
+  color: var(--accentcolor3);
+  font-size: 1.25rem;
+  animation-name: intro;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  margin-bottom: 0;
 }
 
 .intro > h1 {
@@ -207,6 +252,9 @@ section > h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   margin-bottom: 0em;
+  animation-name: intro;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in;
 }
 .intro > h3 {
   font-size: 2.4rem;
@@ -216,11 +264,17 @@ section > h3 {
   font-weight: 500;
   margin-bottom: 0em;
   color: var(--accentcolor4);
+  animation-name: intro;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-in;
 }
 .intro > p {
   font-size: 1.2rem;
   width: 550px;
   color: var(--accentcolor4);
+  animation-name: intro;
+  animation-duration: 1.8s;
+  animation-timing-function: ease-in;
 }
 h2 > sup {
   color: var(--accentcolor3);
@@ -241,13 +295,19 @@ section > h2 {
   height: 10rem;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  justify-items: center;
-  /* list-style: circle; */
+  justify-items: start;
 }
 .about > div > ul > li::before {
   color: var(--accentcolor3);
   margin-left: -1em;
   margin-right: 5px;
   content: "•";
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
+
+section > p {
+  width: 38rem;
+  font-size: 1.1rem;
+}
+
+/* Skills */
