@@ -6,8 +6,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        nested: resolve(__dirname, './404.html'),
-        nested: resolve(__dirname, './src/assets/logo.svg')
+        nested: resolve(__dirname, '404.html'),
+        nested: resolve(__dirname, 'src/assets/logo.svg')
       }
     }
   }
