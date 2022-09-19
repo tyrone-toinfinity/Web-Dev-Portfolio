@@ -2,12 +2,24 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  root: "src",
   build: {
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, "index.html"),
-        nested: resolve(__dirname, "404.html"),
-      },
-    },
+    outDir: "../dist",
+    emptyOutDir: true,
+    // rollupOptions: {
+    //   output: {
+    //     entryFileNames: "[name].js",
+    //     chunkFileNames: "[name].js",
+    //     assetFileNames: "[name].[ext]",
+    //   },
+    // },
   },
+  publicDir: "./",
 });
+
+// module.exports = {
+//   root: "src",
+//   build: {
+//     outDir: "../dist",
+//   },
+// };
