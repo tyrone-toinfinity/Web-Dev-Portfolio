@@ -111,7 +111,7 @@ nav > ul > li > a:focus:before,
 nav > ul > li > a:active:before {
   left: 0;
 }
-
+/* Resume */
 nav > div > a {
   color: var(--primary);
   font-size: 1.2rem;
@@ -119,7 +119,7 @@ nav > div > a {
   border-radius: 5px;
   padding: 1rem;
   margin: 0 1.5rem;
-  padding-right: 2rem;
+  /* padding-right: 2rem; */
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
