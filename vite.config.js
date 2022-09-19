@@ -17,9 +17,3 @@ export default defineConfig({
   publicDir: "./",
 });
 
-// module.exports = {
-//   root: "src",
-//   build: {
-//     outDir: "../dist",
-//   },
-// };
