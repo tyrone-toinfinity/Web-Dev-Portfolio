@@ -308,10 +308,10 @@ section > h2 {
 
 /* Projects */
 .projects {
-  margin-top: 25rem;
+  margin-top: 5rem;
 }
 .projects > div {
-  background-color: var(--accentcolor2);
+  /* background-color: var(--accentcolor2); */
   display: grid;
   width: 800px;
   height: 400px;
@@ -325,7 +325,7 @@ section > h2 {
 .projects > div > h4 {
   grid-column: 5 / -1;
   grid-row: 1 / 2;
-  color: var(--bglight);
+  color: var(--bgdark);
   font-size: 1.5rem;
 }
 
@@ -345,10 +345,11 @@ section > h2 {
   background-color: var(--accentcolor4);
   width: 300px;
   height: 100px;
+  border-radius: .2rem;
   box-shadow: -3px 10px 9px 0px rgba(0, 0, 0, 0.1);
 }
 .projects div figure {
-  background: var(--accentcolor4);
+  background: var(--bglight);
   height: 88%;
 }
 
