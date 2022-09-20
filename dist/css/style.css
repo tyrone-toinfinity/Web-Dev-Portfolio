@@ -356,10 +356,98 @@ fieldset {
   padding: 0;
   width: 100%;
 }
-/* input:nth-child(3) {
-  grid-column: 1 / -1;
-  height: 13rem;
 
 
-  
-} */
+
+
+/* Error Page */
+
+.error {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+
+  background-image: url(/src/assets/brushed-alum-dark.png);
+  background-size: 10%;
+  background-color: var(--bglight);
+  margin: 2rem;
+  border-radius: 2rem;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.error > * {
+  justify-self: center;
+  align-self: center;
+  padding: 2rem;
+}
+.error > div {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.error > div > h2 {
+  font-size: 4rem;
+}
+.error > div > h4 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.error > div > a {
+  color: var(--primary);
+  font-size: 2rem;
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+
+.error > div > a:hover {
+  background-color: var(--primary);
+  color: white;
+}
+@media only screen and (max-width: 1100px) {
+  .error {
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  .error > * {
+    padding: 1rem;
+  }
+  .error > div {
+    align-items: center;
+    margin: 0;
+  }
+  .error > figure > img {
+    width: 100%;
+    margin: 0;
+  }
+  .error > div > h2 {
+    margin: 1.5rem;
+    font-size: 3.5rem;
+  }
+  .error > div > h4 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 1.5rem;
+  }
+
+  .error > div > a {
+    font-size: 1.4rem;
+    align-self: center;
+    margin: 1.5;
+  }
+}

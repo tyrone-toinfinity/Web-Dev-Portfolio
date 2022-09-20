@@ -306,6 +306,61 @@ section > h2 {
   font-size: 0.9rem;
 }
 
+/* Projects */
+.projects {
+  margin-top: 25rem;
+}
+.projects > div {
+  background-color: var(--accentcolor2);
+  display: grid;
+  width: 800px;
+  height: 400px;
+  padding: 2rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.projects > div > h4 {
+  grid-column: 5 / -1;
+  grid-row: 1 / 2;
+  color: var(--bglight);
+  font-size: 1.5rem;
+}
+
+.projects > div > figure {
+  grid-column: 1 / 5;
+  grid-row: 2 / 2;
+  z-index: 0;
+}
+
+.projects > div > div {
+  grid-row: 2 / 2;
+  grid-column: 4 / -1;
+  z-index: 1;
+  color: var(--bglight);
+  font-size: 1.3rem;
+  padding: 1.5rem;
+  background-color: var(--accentcolor4);
+  width: 300px;
+  height: 100px;
+  box-shadow: -3px 10px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.projects div figure {
+  background: var(--accentcolor4);
+  height: 88%;
+}
+
+.projects div figure img {
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
+}
+
+.projects div figure:hover img {
+  opacity: 1;
+}
+
 /* Skills */
 
 /* Contact */
