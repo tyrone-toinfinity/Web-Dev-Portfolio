@@ -49,12 +49,11 @@
         </ul>
         <div><a href="./assets/Bobby-Woody-Resume.pdf">Resume</a></div>
       </nav>
-       <div class="email">
-      <a href="mailto:bobbywoody7@gmail.com ">bobbywoody7@gmail.com</a>
-    </div>
+      <div class="email">
+        <a href="mailto:bobbywoody7@gmail.com ">bobbywoody7@gmail.com</a>
+      </div>
     </header>
-   
-    
+
     <main>
       <!-- Intro -->
       <section class="intro" id="home">
@@ -68,71 +67,77 @@
         </p>
         <figure><img src="" alt="" /></figure>
 
-      
-<section class="social-media">
-
-  <div class="social">
-    <a href="https://github.com/Tyrone-toinifity"
-      ><i class="fa-brands fa-github"></i
-    ></a>
-    <a href="https://www.linkedin.com/in/bobbywoody/"
-      ><i class="fa-brands fa-linkedin"></i
-    ></a>
-    <a href="https://codepen.io/Tyrone-for-the-win">
-      <i class="fa-brands fa-codepen"></i
-    ></a>
-  </div>
-
-</section>
-
-
-
-
+        <section class="social-media">
+          <div class="social">
+            <a href="https://github.com/Tyrone-toinifity"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/bobbywoody/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://codepen.io/Tyrone-for-the-win">
+              <i class="fa-brands fa-codepen"></i
+            ></a>
+          </div>
+        </section>
       </section>
       <!-- Projects -->
       <section class="projects" id="projects">
         <h2>Projects<sup>|01</sup></h2>
 
-        <div>
+        <div class="hidden">
           <h4>Color Hex</h4>
-
           <figure>
             <a href="#"
               ><img src="./assets/colorHex.png" alt="color hex" width="500px"
             /></a>
           </figure>
 
-          <div>
+          <div class="description">
             <p>
               A web application used generator random colors with Hex & Rgb
               values
             </p>
+
+            <ul class="build-tools">
+              <li><i class="fa-brands fa-html5"></i></li>
+              <li><i class="fa-brands fa-js"></i></li>
+              <li><i class="fa-brands fa-css3"></i></li>
+            </ul>
           </div>
         </div>
+
         <br />
         <br />
         <br />
 
-        <div>
+        <div class="hidden">
           <h4>Tony's Chocolonely</h4>
-
           <figure>
-            <a href="#"
-              > <div class="image-overlay"></div> <img
+            <a href="#">
+              <img
                 src="./assets/tonyschocolonely.png"
                 alt="color hex"
                 width="500px"
-              /> 
-              <div class="overlay">
+              />
             </a>
-
           </figure>
+          <div class="description">
+            <p>
+              E-commerce website for showcasing products. Rate your favorite
+              product with stars, login with username.
+            </p>
 
-          <div>
-            <p>E-commerce website</p>
+            <ul class="build-tools">
+              <li><i class="fa-brands fa-html5"></i></li>
+              <li><i class="fa-brands fa-js"></i></li>
+              <li><i class="fa-brands fa-css3"></i></li>
+              <li><i class="fa-brands fa-bootstrap"></i></li>
+            </ul>
           </div>
         </div>
       </section>
+
       <!-- About me -->
       <section class="about" id="about">
         <h2>About<sup>|02</sup></h2>
@@ -164,31 +169,26 @@
       </section>
 
       <!-- Contact -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2>Contact<sup>|03</sup></h2>
 
-        <form
-          action="https://formsubmit.co/bobbywoody7@gmail.com"
-          method="POST"
-        >
-          <input type="text" name="name" placeholder="Name" required />
-          <input type="email" name="email" placeholder="Email" required />
-          <!-- <input
-            type="message"
-            name="message"
-            placeholder="Say Hello!"
-            required
-          /> -->
-          <fieldset>
-            <textarea
-              placeholder="Type your message here...."
-              tabindex="5"
-              required
-            ></textarea>
-          </fieldset>
-
-          <button type="submit">Send</button>
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label> <input type="text" name="name"  placeholder="Name" required/></label>
+          </p>
+          <p>
+            <label><input type="email" name="email" placeholder="Email" required /></label>
+          </p>
+          <p>
+            <label><textarea name="message" placeholder="Say Hello 🥶" required></textarea></label>
+          </p>
+          <div data-netlify-recaptcha="true"></div>
+          <p>
+            <button type="submit">Send</button>
+          </p>
         </form>
+
+
       </section>
     </main>
   </body>
