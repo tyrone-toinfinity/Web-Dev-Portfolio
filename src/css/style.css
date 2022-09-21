@@ -385,58 +385,62 @@ section > h2 {
   opacity: 1;
 }
 
-
-
-
 /* Contact */
 .contact {
-  margin-top: 15rem;
+  margin-top: 5rem;
 }
 
-/* input {
-  border: none;
-  background-color: var(--bglight);
-  border-radius: 0.2rem;
-}
-button[type="submit"] {
-  color: white;
-  background-color: var(--accentcolor5);
-  border-radius: 5px;
-  border: 1px solid;
-  height: 2rem;
-  grid-column: 8/-1;
-  margin-top: 1rem;
+/* Form */
+#form {
+  width: 30rem;
+  margin: 1rem auto;
+  margin-bottom: 40rem;
+  display: flex;
+  flex-direction: column;
 }
 
-form {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  width: 800px;
-  gap: 0.5rem;
-}
-
-input:nth-child(1) {
-  grid-column: 1 /5;
-  grid-row: 1/2;
-  height: 3rem;
-}
-input:nth-child(2) {
-  grid-column: 5 /9;
-  grid-row: 1/2;
-  height: 3rem;
-}
-fieldset > textarea {
-  grid-column: 1 / -1;
-  height: 13rem;
-}
-
-fieldset {
-  border: medium none !important;
-  margin: 0 0 10px;
-  min-width: 100%;
-  padding: 0;
+input,
+textarea {
+  font-size: 1.1rem;
   width: 100%;
-} */
+  padding: 0.5rem;
+  border: solid 1px var(--primary);
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+  color: var(--primary);
+}
+
+input:hover,
+textarea:hover {
+  background-color: var(--primary);
+  color: var(--bglight);
+}
+
+textarea {
+  height: 75px;
+}
+
+.submit {
+  align-self: flex-end;
+  margin: 0;
+  width: 110px;
+}
+
+#submit {
+  width: 115%;
+  padding: 0.5rem;
+  background-color: var(--bglight);
+  color: var(--primary);
+  border: solid 1px var(--primary);
+  border-radius: 3px;
+}
+
+#submit:hover {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: var(--primary);
+  color: var(--bglight);
+}
 
 /* Error Page */
 

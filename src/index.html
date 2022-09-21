@@ -172,23 +172,38 @@
       <section class="contact" id="contact">
         <h2>Contact<sup>|03</sup></h2>
 
-        <form name="contact" method="POST" data-netlify="true">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          class="topBefore"
+          id="form"
+        >
           <p>
-            <label> <input type="text" name="name"  placeholder="Name" required/></label>
+            <label>
+              <input type="text" name="name" placeholder="Name" required
+            /></label>
           </p>
           <p>
-            <label><input type="email" name="email" placeholder="Email" required /></label>
+            <label
+              ><input type="email" name="email" placeholder="Email" required
+            /></label>
           </p>
           <p>
-            <label><textarea name="message" placeholder="Say Hello 🥶" required></textarea></label>
+            <label>
+              <textarea
+                name="message"
+                placeholder="Say Hello 🤖"
+                required
+              ></textarea>
+            </label>
           </p>
           <div data-netlify-recaptcha="true"></div>
-          <p>
-            <button type="submit">Send</button>
+          <p class="submit">
+            <button id="submit" type="submit">Send</button>
           </p>
+          <input type="hidden" name="form-name" value="contact" />
         </form>
-
-
       </section>
     </main>
   </body>
