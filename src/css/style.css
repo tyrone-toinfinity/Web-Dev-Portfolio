@@ -42,20 +42,6 @@ a > sup {
   font-size: 1rem;
   display: flex;
 }
-.social {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 20px;
-  position: fixed;
-  top: 7rem;
-  left: 2.4rem;
-  font-size: 1.6rem;
-}
-.social > a {
-  color: var(--primary);
-  margin: 1rem 0.5rem;
-}
-
 .email > a {
   color: var(--primary);
 }
@@ -135,38 +121,6 @@ nav > div > a {
 nav > div > a:hover {
   background-color: var(--primary);
   color: white;
-}
-
-/* social transitions */
-.email > a {
-  animation-name: fadein;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-out;
-}
-.email > a:hover {
-  color: var(--accentcolor3);
-}
-
-.social > a {
-  animation-name: fadein;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-}
-
-.social > a:hover {
-  transform: translateY(-10px);
-  transition-duration: 0.5s;
-  color: var(--accentcolor);
-}
-@keyframes fadein {
-  0% {
-    transform: translateY(-2rem);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 /* logo */
@@ -306,6 +260,50 @@ section > h2 {
   font-size: 0.9rem;
 }
 
+/* Social */
+.social {
+  font-size: 2.6rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 500px;
+  margin: auto;
+}
+
+.social > a {
+  animation-name: fade2;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.social > a:hover {
+  transform: translateY(-10px);
+  transition-duration: 0.5s;
+  color: var(--accentcolor);
+}
+
+.social > a:hover {
+  transform: translateY(-10px);
+  transition-duration: 0.5s;
+  color: var(--accentcolor);
+}
+
+.social > a {
+  color: var(--primary);
+  margin: 1rem 0.5rem;
+}
+
+@keyframes fade2 {
+  0% {
+    transform: translateY(-2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* Projects */
 .projects {
   margin-top: 5rem;
@@ -345,7 +343,7 @@ section > h2 {
   background-color: var(--accentcolor4);
   width: 300px;
   height: 100px;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   box-shadow: -3px 10px 9px 0px rgba(0, 0, 0, 0.1);
 }
 .projects div figure {
