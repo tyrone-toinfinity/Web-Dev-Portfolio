@@ -351,11 +351,11 @@ section > h2 {
   grid-column: 4 / -1;
   z-index: 1;
   color: var(--bglight);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 0 1.5rem 1.5rem 1.5rem;
   background-color: var(--accentcolor4);
   width: 350px;
-  height: 100px;
+  height: 120px;
   border-radius: 0.2rem;
   box-shadow: -3px 10px 9px 0px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -366,8 +366,8 @@ section > h2 {
 .build-tools {
   color: var(--primary);
   display: flex;
-  gap: 2rem;
-  font-size: 1.5rem;
+  gap: 1.5rem;
+  font-size: 1.2rem;
   color: var(--primary);
 }
 
@@ -534,4 +534,55 @@ textarea {
     justify-content: center;
     align-items: center;
   }
+}
+
+/* Success */
+
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bglight);
+  height: 100vh;
+  background-image: url(/src/assets/foggy-birds.png);
+  background-size: 20%;
+  font-family: "Poppins", sans-serif;
+}
+
+.success-image {
+  /* width: 60vh; */
+  border-radius: 50%;
+}
+
+.success > figure {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.success > figure > figcaption {
+  text-align: center;
+  align-self: center;
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.success > div > a {
+  color: var(--primary);
+  font-size: 2rem;
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+}
+
+.success > div > a:hover {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 20px;
 }
