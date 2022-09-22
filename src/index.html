@@ -42,10 +42,19 @@
           width="40px"
         />
       </figure>
-      <!-- <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button> -->
-      <nav>
+      <!-- Hamburger button -->
+      <a href="#navbar" class="hamburger" aria-label="Open main menu.">
+        <span class="sr-only">Open main menu</span>
+        <i class="fa-solid fa-bars" aria-hidden="true"></i
+      ></a>
+
+
+      <nav id="navbar">
+             <!-- close hamburger -->
+             <a href="#" class="close" aria-label="Close main menu.">
+              <span class="sr-only">Close main menu</span>
+              <i class="fa-solid fa-xmark" aria-hidden="true"></i
+            ></a>
         <ul>
           <li>
             <a href="#projects"><sup>01|</sup>Projects </a>
@@ -58,13 +67,16 @@
           </li>
         </ul>
         <div><a href="./assets/Bobby-Woody-Resume.pdf">Resume</a></div>
+      
+
+
+   
+
+
       </nav>
-      <div class="email">
-        <a href="mailto:bobbywoody7@gmail.com ">bobbywoody7@gmail.com</a>
-      </div>
     </header>
 
-    <main>
+    <main class="">
       <!-- Intro -->
       <section class="intro" id="home">
         <h4>Hello, my name is</h4>
@@ -98,9 +110,7 @@
         <div class="hidden">
           <h4>Color Hex</h4>
           <figure>
-            <a href="#"
-              ><img src="./assets/colorHex.png" alt="color hex" width="500px"
-            /></a>
+            <a href="#"><img src="./assets/colorHex.png" alt="color hex" /></a>
           </figure>
 
           <div class="description">
@@ -126,11 +136,7 @@
           <h4>Tony's Chocolonely</h4>
           <figure>
             <a href="#">
-              <img
-                src="./assets/tonyschocolonely.png"
-                alt="color hex"
-                width="500px"
-              />
+              <img src="./assets/tonyschocolonely.png" alt="color hex" />
             </a>
           </figure>
           <div class="description">
