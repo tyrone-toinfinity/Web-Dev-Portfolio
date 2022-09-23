@@ -23,7 +23,7 @@ const main = document.querySelector("main");
 
 hamburger.addEventListener("click", () => {
   main.classList.add("blur");
-  main.classList.remove("blur-remove");
+  main.classList.removed("blur-remove");
 });
 close.addEventListener("click", () => {
   main.classList.remove("blur");

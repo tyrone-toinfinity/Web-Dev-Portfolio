@@ -20,12 +20,18 @@ const hamburger = document.querySelector(".hamburger");
 const close = document.querySelector(".close");
 const navbar = document.querySelector("#navbar");
 const main = document.querySelector("main");
+const navList = document.querySelector("#navbar-list");
 
 hamburger.addEventListener("click", () => {
-  main.classList.add("blur");
-  main.classList.remove("blur-remove");
+  return main.classList.add("blur");
+  main.classList.removed("blur-remove");
 });
 close.addEventListener("click", () => {
-  main.classList.remove("blur");
+  return main.classList.remove("blur");
+  main.classList.add("blur-remove");
+});
+
+navList.addEventListener("click", () => {
+  return main.classList.remove("blur");
   main.classList.add("blur-remove");
 });
