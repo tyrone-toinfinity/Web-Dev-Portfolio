@@ -1,5 +1,4 @@
-// Test
-console.log("Hello World!");
+import "../css/style.css"
 
 // Scroll Animation
 const observer = new IntersectionObserver((entries) => {
