@@ -429,7 +429,21 @@ section > h2 {
   transition: 0.3s ease-in-out;
 }
 
+.img__description {
+  font-size: 2rem;
+  display: flex;
+  /* background: rgba(29, 106, 154, 0.72); */
+  color: red;
+
+  opacity: 1;
+
+  transition: all 0.5s;
+}
+
 .projects div figure:hover img {
+  opacity: 1;
+}
+.projects div figure:hover .img__description {
   opacity: 1;
 }
 
