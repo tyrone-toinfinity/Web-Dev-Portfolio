@@ -431,12 +431,9 @@ section > h2 {
 
 .img__description {
   font-size: 2rem;
-  display: flex;
-  /* background: rgba(29, 106, 154, 0.72); */
-  color: red;
 
+  color: var(--accentcolor2);
   opacity: 1;
-
   transition: all 0.5s;
 }
 
