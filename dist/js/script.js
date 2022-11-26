@@ -1,6 +1,6 @@
-import "../css/style.css"
+"use strict";
+// import "../css/style.css";
 
-// Scroll Animation
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -34,3 +34,9 @@ navList.addEventListener("click", () => {
   return main.classList.remove("blur");
   main.classList.add("blur-remove");
 });
+
+const getYear = new Date().getFullYear();
+
+document
+  .querySelector(".yearCopyRight")
+  .prepend(`Copyright ©${getYear} Bobby Woody`);

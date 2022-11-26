@@ -508,14 +508,13 @@ textarea {
 /* Footer */
 footer {
   background-color: var(--accentcolor5);
-  /* padding: 4rem; */
   width: 100%;
 }
 .footer__main {
   display: flex;
   margin: 0 auto;
   max-width: 80rem;
-  padding: 5rem;
+  padding: 3rem;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -525,9 +524,7 @@ footer {
   font-size: 2.5rem;
   top: -5px;
   right: 0px;
-
   color: var(--bglight);
-
   position: absolute;
 }
 
@@ -536,6 +533,20 @@ footer {
   padding: 2rem;
   border-radius: 50%;
   position: relative;
+}
+.link__options > p {
+  color: var(--bglight);
+  position: absolute;
+  left: 130%;
+  font-size: 0.8rem;
+  width: 120px;
+}
+.link__options > p > a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.link__options > p > a {
+  color: var(--bglight);
 }
 /* Moblie */
 
@@ -562,6 +573,28 @@ footer {
   .projects,
   .contact {
     margin-top: 5rem;
+  }
+
+  /* footer */
+  .footer__main {
+    display: flex;
+    margin: 0 auto;
+    max-width: 80rem;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .link__options {
+    background-color: var(--accentcolor2);
+    padding: 1.5rem;
+  }
+  .icon__footer__links {
+    font-size: 2rem;
+  }
+  .link__options > p {
+    width: 250px;
   }
 }
 
