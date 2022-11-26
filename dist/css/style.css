@@ -33,13 +33,17 @@ a > sup {
   top: 4px;
   right: 16px;
 }
-
 header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 12rem;
   background-color: var(--bglight);
   width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 12rem auto;
+
+  /* width: 100%; */
+  max-width: 80rem;
 }
 
 section > p {
@@ -354,7 +358,7 @@ section > h2 {
 
 /* Projects */
 .projects {
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 
 .hidden {
@@ -518,7 +522,7 @@ textarea {
   .projects > div {
     padding: 0;
   }
-  header {
+  .navbar {
     margin-bottom: 8rem;
   }
 
