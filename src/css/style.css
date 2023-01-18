@@ -436,6 +436,7 @@ section > h2 {
 .build-tools {
   display: flex;
   gap: 1.5rem;
+  margin: 1rem;
 }
 
 .projects div figure {
