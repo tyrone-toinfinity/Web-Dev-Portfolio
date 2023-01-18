@@ -240,7 +240,7 @@ nav > div {
   max-width: 40rem;
 }
 .intro > h4 {
-  color: var(--accentcolor3);
+  color: var(--accentcolor5);
   font-size: 1.25rem;
   animation-name: intro;
   animation-duration: 1s;
@@ -272,8 +272,10 @@ nav > div {
   animation-timing-function: ease-in;
 }
 .intro > p {
+  margin: 1rem 0;
   font-size: 1.2rem;
-  color: var(--accentcolor4);
+  color: var(--accentcolor5);
+  line-height: 1.6rem;
   animation-name: intro;
   animation-duration: 1.8s;
   animation-timing-function: ease-in;
@@ -304,12 +306,25 @@ section > h2 {
   align-items: center;
   justify-items: start;
 }
+.about > p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: var(--accentcolor5);
+  line-height: 1.6rem;
+}
+.about > div > ul > li {
+  font-size: 1rem;
+  color: var(--accentcolor5);
+}
 .about > div > ul > li::before {
   color: var(--accentcolor3);
   margin-left: -1em;
   margin-right: 5px;
-  content: "•";
-  font-size: 0.9rem;
+  content: "• ";
+  margin: 1rem 0;
+  font-size: 1rem;
+
+  line-height: 1.6rem;
 }
 
 /* Social */
@@ -358,7 +373,7 @@ section > h2 {
 
 /* Projects */
 .projects {
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .hidden {
