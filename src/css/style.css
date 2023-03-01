@@ -806,7 +806,7 @@ footer {
     margin: 4rem auto;
   }
   .projects > div > figure {
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
   }
   section {
     margin: 2rem;
@@ -819,5 +819,8 @@ footer {
   }
   .icon__footer__links {
     font-size: 1.5rem;
+  }
+  .project-name {
+    margin: 2rem 0;
   }
 }
