@@ -764,3 +764,57 @@ footer {
   color: white;
   border-radius: 20px;
 }
+
+@media screen and (max-width: 767px) {
+  .projects > div {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .projects > div > h4 {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .projects > div > figure {
+    grid-column: 1 / -1;
+    grid-row: 2 / 5;
+    z-index: 0;
+  }
+
+  .projects > div > .description {
+    grid-row: 5 / -1;
+    grid-column: 1 / -1;
+    z-index: 1;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .projects div figure {
+    background: var(--bglight);
+    height: 100%;
+    max-width: 100%;
+  }
+  .projects {
+    margin: 0;
+  }
+  .project-container {
+    margin: 4rem auto;
+  }
+  .projects > div > figure {
+    margin-bottom: 6rem;
+  }
+  section {
+    margin: 2rem;
+  }
+  .projects-title {
+    margin-left: 2rem;
+  }
+  .footer__main {
+    padding: 0;
+  }
+}

@@ -811,4 +811,13 @@ footer {
   section {
     margin: 2rem;
   }
+  .projects-title {
+    margin-left: 2rem;
+  }
+  .footer__main {
+    padding: 1rem 0;
+  }
+  .icon__footer__links {
+    font-size: 1.5rem;
+  }
 }
