@@ -765,6 +765,10 @@ footer {
   border-radius: 20px;
 }
 
+.project-name {
+  font-size: 1.5rem;
+}
+
 @media screen and (max-width: 767px) {
   .projects > div {
     grid-template-columns: repeat(12, 1fr);
