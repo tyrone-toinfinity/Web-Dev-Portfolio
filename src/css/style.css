@@ -242,14 +242,6 @@ nav > div {
 .intro {
   max-width: 40rem;
 }
-.intro > h4 {
-  color: var(--accentcolor5);
-  font-size: 1.25rem;
-  animation-name: intro;
-  animation-duration: 1s;
-  animation-timing-function: ease-in;
-  margin-bottom: 0;
-}
 
 .intro__name {
   font-size: 4rem;
@@ -297,7 +289,7 @@ section > h2 {
 /* about */
 
 .about {
-  margin-top: 12rem;
+  margin-top: 6rem;
 }
 
 .about > div > ul {
@@ -309,8 +301,8 @@ section > h2 {
   align-items: center;
   justify-items: start;
 }
-.about > p {
-  margin: 1rem 0;
+.about__pg {
+  margin: 2rem 0;
   font-size: 1.2rem;
   color: var(--accentcolor5);
   line-height: 1.8rem;
@@ -690,6 +682,11 @@ footer a {
 
   .project-name {
     font-size: 1.5rem;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
   }
 
   @media screen and (max-width: 767px) {

@@ -1,13 +1,13 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  root: "src",
+  root: "./src",
   build: {
     outDir: "../dist",
-    minify: "esbuild",
+    emptyOutDir: true,
+    minify: "terser",
+    rollupOptions: {
+      minify: true,
+    },
   },
-  css: {
-    modules: true,
-  },
-  publicDir: "./",
 });
