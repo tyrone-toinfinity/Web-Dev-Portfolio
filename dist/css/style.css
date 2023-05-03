@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 1px;
   --primary: #393e59;
   --bglight: #f0f2f2;
   --bgdark: #010326;
@@ -54,6 +53,10 @@ header {
   max-width: 40px;
 }
 
+section > p {
+  max-width: 45rem;
+  font-size: 1.1rem;
+}
 nav {
   display: flex;
 }
@@ -254,7 +257,7 @@ nav > div {
 .intro__name {
   font-size: 4rem;
   color: var(--accentcolor5);
-  margin-top: 3rem;
+  margin-top: 0.2rem;
   font-weight: 500;
   margin-bottom: 0em;
   animation-name: intro;
@@ -263,22 +266,20 @@ nav > div {
 }
 .intro__title {
   font-size: 2.4rem;
-  margin-top: 1rem;
+  margin-top: 0.2rem;
   font-variant: normal;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 0rem;
   color: var(--accentcolor4);
-  letter-spacing: 5px;
   animation-name: intro;
   animation-duration: 1.3s;
   animation-timing-function: ease-in;
 }
-
-.intro__pg {
-  margin: 2rem 0;
+.intro > p {
+  margin: 1rem 0;
   font-size: 1.2rem;
   color: var(--accentcolor5);
-  line-height: 1.8rem;
+  line-height: 1.6rem;
   animation-name: intro;
   animation-duration: 1.8s;
   animation-timing-function: ease-in;
@@ -313,7 +314,7 @@ section > h2 {
   margin: 1rem 0;
   font-size: 1.2rem;
   color: var(--accentcolor5);
-  line-height: 1.8rem;
+  line-height: 1.6rem;
 }
 .about > div > ul > li {
   font-size: 1rem;
@@ -519,14 +520,13 @@ textarea {
 
 /* Footer */
 footer {
-  background-color: var(--accentcolor5);
+  background-color: var(--accentcolor4);
   width: 100%;
-  padding: 2rem;
+  padding: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  text-align: center;
 }
 footer a {
   color: white;
