@@ -520,7 +520,6 @@ textarea {
 /* Footer */
 footer {
   background-color: var(--accentcolor5);
-  width: 100%;
   padding: 2rem;
   display: flex;
   align-items: center;
