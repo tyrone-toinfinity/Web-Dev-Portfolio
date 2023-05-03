@@ -332,7 +332,7 @@ section > h2 {
 
 /* Social */
 .social {
-  font-size: 3rem;
+  font-size: 2rem;
   display: flex;
   justify-content: space-around;
   gap: 1rem;
@@ -340,27 +340,19 @@ section > h2 {
   margin: auto;
 }
 
-.social > a {
+.social__icons {
+  fill: var(--accentcolor5);
+  width: 3rem;
   animation-name: fade2;
   animation-duration: 2s;
   animation-timing-function: ease-out;
-}
-
-.social > a:hover {
-  transform: translateY(-10px);
-  transition-duration: 0.5s;
-  color: var(--accentcolor);
-}
-
-.social > a:hover {
-  transform: translateY(-10px);
-  transition-duration: 0.5s;
-  color: var(--accentcolor);
-}
-
-.social > a {
-  color: var(--primary);
   margin: 1rem 0.5rem;
+}
+
+.social__icons:hover {
+  transform: translateY(-10px);
+  transition-duration: 0.5s;
+  fill: var(--accentcolor);
 }
 
 @keyframes fade2 {
