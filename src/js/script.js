@@ -36,7 +36,18 @@ navList.addEventListener("click", () => {
 });
 
 const getYear = new Date().getFullYear();
+const name = "Bobby Woody";
+const email = "bobbywoody7@gmail.com";
 
-document
-  .querySelector(".yearCopyRight")
-  .prepend(`Copyright ©${getYear} Bobby Woody`);
+document.querySelector(".yearCopyRight").innerHTML = `
+  &copy;${getYear} <a href="mailto:${email}">${name}</a>
+`;
+
+const buttons = document.querySelectorAll(".toggle-button");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const container = button.parentNode.querySelector(".project-container");
+    container.classList.toggle("hidden");
+  });
+});

@@ -21,12 +21,6 @@
       type="image/x-icon"
     />
     <link rel="apple-touch-icon" href="./assets/logo-apple-touch.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:wght@300;400;500;800&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
   <!-- Google tag (gtag.js) -->
@@ -50,11 +44,7 @@
       <div class="navbar">
         <figure class="logo">
           <a href="https://bobbywoody.com/"
-            ><img
-              src="./assets/logo.svg
-        "
-              alt="logo"
-              width="40px"
+            ><img src="./assets/logo.svg" alt="logo" class="logo-navbar"
           /></a>
         </figure>
         <!-- Hamburger button -->
@@ -94,9 +84,8 @@
     <main class="">
       <!-- Intro -->
       <section class="intro" id="home">
-        <h4>Hello, my name is</h4>
-        <h1>Bobby Woody.</h1>
-        <h3><i>Software Developer</i></h3>
+        <h1 class="intro__name">Bobby Woody</h1>
+        <i class="intro__title">Software Developer</i>
         <p>
           As a skilled software developer with a passion for creating beautiful
           and functional websites, I have honed my skills over the past 3 years
@@ -108,7 +97,6 @@
           software, and my attention to detail ensures that my projects are
           delivered on time and to a high standard.
         </p>
-        <figure><img src="" alt="" /></figure>
 
         <section class="social-media">
           <div class="social">
@@ -137,7 +125,6 @@
       <section class="projects" id="projects">
         <h2 class="projects-title">Projects<sup>|01</sup></h2>
         <!-- Project Start -->
-
         <div class="hidden project-container">
           <h6 class="project-name">Flobnb</h6>
           <figure>
@@ -157,12 +144,6 @@
               left and right to view different rental properties. The project
               was built using JavaScript, HTML, and CSS.
             </p>
-
-            <ul class="build-tools">
-              <li><i class="fa-brands fa-html5"></i></li>
-              <li><i class="fa-brands fa-js"></i></li>
-              <li><i class="fa-brands fa-css3"></i></li>
-            </ul>
           </div>
         </div>
 
@@ -175,12 +156,12 @@
           <figure>
             <a href="https://beatspro.netlify.app/"
               ><img
+                loading="lazy"
                 class="project-image"
                 src="./assets/beats-pro.png"
                 alt="beats app image"
             /></a>
           </figure>
-
           <div class="description">
             <p>
               I built a mock website for Beats, similar to their official
@@ -192,12 +173,6 @@
               back to the homepage. Finally, I used React Router to enable
               navigation between pages.
             </p>
-
-            <ul class="build-tools">
-              <li><i class="fa-brands fa-html5"></i></li>
-              <li><i class="fa-brands fa-react"></i></li>
-              <li><i class="fa-brands fa-css3"></i></li>
-            </ul>
           </div>
         </div>
 
@@ -209,6 +184,7 @@
           <figure>
             <a href="https://reeltalent.us/"
               ><img
+                loading="lazy"
                 class="project-image"
                 src="./assets/reel-talent.png"
                 alt="reel talent company site"
@@ -224,12 +200,6 @@
               messages. On the page, there is an image of the website and a
               brief description of the project
             </p>
-
-            <ul class="build-tools">
-              <li><i class="fa-brands fa-html5"></i></li>
-              <li><i class="fa-brands fa-react"></i></li>
-              <li><i class="fa-brands fa-css3"></i></li>
-            </ul>
           </div>
         </div>
 
@@ -242,6 +212,7 @@
           <figure>
             <a href="https://weatherchannelapp.netlify.app/"
               ><img
+                loading="lazy"
                 class="project-image"
                 src="./assets/weather-app.png"
                 alt="weather channel app"
@@ -256,15 +227,8 @@
               speed, and more. I also implemented a search history feature that
               enables users to view their previous searches.
             </p>
-
-            <ul class="build-tools">
-              <li><i class="fa-brands fa-html5"></i></li>
-              <li><i class="fa-brands fa-react"></i></li>
-              <li><i class="fa-brands fa-css3"></i></li>
-            </ul>
           </div>
         </div>
-
         <br />
         <br />
         <br />
@@ -273,6 +237,7 @@
           <figure>
             <a href="https://free-calculator-app.netlify.app/"
               ><img
+                loading="lazy"
                 class="project-image"
                 src="./assets/calculator-app.png"
                 alt="calculator-app"
@@ -288,12 +253,6 @@
               added a clear button to reset the calculator and a decimal point
               button for more precise calculations.
             </p>
-
-            <ul class="build-tools">
-              <li><i class="fa-brands fa-html5"></i></li>
-              <li><i class="fa-brands fa-react"></i></li>
-              <li><i class="fa-brands fa-css3"></i></li>
-            </ul>
           </div>
         </div>
 
@@ -306,6 +265,7 @@
           <figure>
             <a href="https://tonys-chocolonely.netlify.app/">
               <img
+                loading="lazy"
                 class="project-image"
                 src="./assets/tonyschocolonely.png"
                 alt="color hex"
@@ -321,13 +281,6 @@
               the chocolate industry. Additionally, I implemented a star rating
               system to allow users to rate the products.
             </p>
-
-            <ul class="build-tools">
-              <li><i class="fa-brands fa-html5"></i></li>
-              <li><i class="fa-brands fa-js"></i></li>
-              <li><i class="fa-brands fa-css3"></i></li>
-              <li><i class="fa-brands fa-bootstrap"></i></li>
-            </ul>
           </div>
         </div>
       </section>
@@ -409,28 +362,9 @@
       </section>
     </main>
     <footer>
-      <ul class="footer__main">
-        <li class="link__options">
-          <i class="icon__footer__links fa-solid fa-envelope"></i>
-          <p><a href="mailto:bobbywoody7@gmail.com">Contact</a></p>
-        </li>
-        <li class="link__options">
-          <i class="icon__footer__links fa-solid fa-file"></i>
-          <p>
-            <a
-              href="./assets/Bobby_Woody_Software_Developer_Resume.pdf"
-              target="_blank"
-              download="./assets/Bobby_Woody_Software_Developer_Resume.pdf"
-            >
-              Download Resume</a
-            >
-          </p>
-        </li>
-        <li class="link__options">
-          <i class="icon__footer__links fa-solid fa-copyright"></i>
-          <p class="yearCopyRight"></p>
-        </li>
-      </ul>
+      <div class="footer__links">
+        <p class="yearCopyRight"></p>
+      </div>
     </footer>
     <!--  JS -->
     <link rel="stylesheet" href="./css/style.css" />
