@@ -130,10 +130,6 @@ section {
   margin: 0 6.5rem;
 }
 
-section > h3 {
-  font-variant: small-caps;
-}
-
 /* nav animation */
 @keyframes fadelogo {
   0% {
@@ -366,13 +362,11 @@ section > h2 {
 .hidden {
   opacity: 0;
   transition: all 0.5s;
-  transform: translateY(10%);
   transition-timing-function: ease-in-out;
   filter: blur(3px);
 }
 .show {
   opacity: 1;
-  transform: translateY(0);
   filter: blur(0);
 }
 
@@ -390,13 +384,6 @@ section > h2 {
   grid-template-rows: repeat(4, 1fr);
   align-items: center;
   justify-items: center;
-}
-
-.projects > div > h4 {
-  grid-column: 5 / -1;
-  grid-row: 1 / 2;
-  color: var(--bgdark);
-  font-size: 1.5rem;
 }
 
 .projects > div > figure {
@@ -503,7 +490,7 @@ textarea {
 
 /* Footer */
 footer {
-  background-color: var(--accentcolor5);
+  background-color: var(--accentcolor4);
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -680,8 +667,8 @@ footer a {
     border-radius: 20px;
   }
 
-  .project-name {
-    font-size: 1.5rem;
+  .project__name {
+    font-size: 5rem;
   }
 
   .project-image {
@@ -738,7 +725,7 @@ footer a {
     .projects-title {
       margin-left: 2rem;
     }
-    .project-name {
+    .project__name {
       margin: 2rem 0;
     }
   }
