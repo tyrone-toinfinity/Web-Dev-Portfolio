@@ -35,11 +35,6 @@ a > sup {
   right: 16px;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
 header {
   background-color: var(--bglight);
   width: 100%;
@@ -244,9 +239,8 @@ nav > div {
   color: var(--accentcolor5);
   margin-top: 3rem;
   font-weight: 500;
-  margin-bottom: 0em;
   animation-name: intro;
-  animation-duration: 1.2s;
+  animation-duration: 1s;
   animation-timing-function: ease-in;
 }
 .intro__title {
@@ -254,11 +248,10 @@ nav > div {
   margin-top: 1rem;
   font-variant: normal;
   font-weight: 400;
-  margin-bottom: 0rem;
   color: var(--accentcolor4);
   letter-spacing: 5px;
   animation-name: intro;
-  animation-duration: 1.3s;
+  animation-duration: 1.2s;
   animation-timing-function: ease-in;
 }
 
@@ -268,7 +261,7 @@ nav > div {
   color: var(--accentcolor5);
   line-height: 1.8rem;
   animation-name: intro;
-  animation-duration: 1.8s;
+  animation-duration: 1.4s;
   animation-timing-function: ease-in;
 }
 h2 > sup {
@@ -357,6 +350,9 @@ section > h2 {
 /* Projects */
 .projects {
   margin-top: 5rem;
+}
+.project__name {
+  font-size: 1.5rem;
 }
 
 .hidden {
@@ -665,10 +661,6 @@ footer a {
     background-color: var(--primary);
     color: white;
     border-radius: 20px;
-  }
-
-  .project__name {
-    font-size: 5rem;
   }
 
   .project-image {
