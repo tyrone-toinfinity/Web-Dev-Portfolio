@@ -664,8 +664,9 @@ footer a {
   }
 
   .project-image {
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
+    aspect-ratio: 2/1;
   }
 
   @media screen and (max-width: 767px) {
