@@ -249,7 +249,8 @@ nav > div {
   font-variant: normal;
   font-weight: 400;
   color: var(--accentcolor4);
-  letter-spacing: 5px;
+
+  letter-spacing: 3px;
   animation-name: intro;
   animation-duration: 1.2s;
   animation-timing-function: ease-in;
